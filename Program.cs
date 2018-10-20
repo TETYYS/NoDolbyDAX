@@ -119,7 +119,7 @@ class Program
 		}
 
 		var hSCM = OpenSCManager(null, null, 0x1 | 0x2 | 0x4 | 0x20);
-        var hSVC = OpenService(hSCM, "DAX2API", 0x1 | 0x2 | 0x4 | 0x20);
+		var hSVC = OpenService(hSCM, "DAX2API", 0x1 | 0x2 | 0x4 | 0x20);
 
 		if (hSVC == IntPtr.Zero) {
 			Console.WriteLine(@"No Dolby DAX service found! Hooray (3)");
